@@ -3,13 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@storybook/addon-knobs": "^4.1.2",
-    "@storybook/addon-storyshots": "^4.1.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-redux": "^6.0.0",
-    "react-scripts": "2.1.1",
-    "react-test-renderer": "^16.6.3"
+    "react-redux": "^6.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,7 +13,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -c .storybook"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,11 +26,14 @@
   ],
   "devDependencies": {
     "@storybook/react": "^4.1.1",
+    "@storybook/addon-knobs": "^4.1.2",
     "@storybook/addon-actions": "^4.1.1",
     "@storybook/addon-links": "^4.1.1",
     "@storybook/addons": "^4.1.1",
     "@storybook/addon-storyshots": "^4.1.1",
     "@babel/core": "^7.2.0",
-    "babel-loader": "^8.0.4"
+    "babel-loader": "^8.0.4",
+    "react-scripts": "2.1.1",
+    "react-test-renderer": "^16.6.3"
   }
 }
