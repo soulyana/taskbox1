@@ -27,10 +27,14 @@ export function PureInboxScreen({ error }) {
             <TaskList />
         </div>
     );
+}
 
     PureInboxScreen.propTypes = {
+        error: PropTypes.string,
+    };
+
+    PureInboxScreen.defaultProps = {
         error: null,
     };
-}
 
 export default connect(({ error }) => ({ error }))(PureInboxScreen);
